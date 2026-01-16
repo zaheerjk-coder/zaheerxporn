@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Scroll Test - Zaheer Unfiltered</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Quick test styles */
+        body {
+            padding-top: 60px;
+        }
+
+        .test-container {
+            padding: 2rem 1rem;
+        }
+
+        .test-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .test-description {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .demo-card {
+            min-width: 160px;
+            max-width: 160px;
+            height: 240px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            scroll-snap-align: start;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">ZAHEER<span class="highlight">UNFILTERED</span></a>
+        </div>
+        <div class="nav-right">
+            <div class="mobile-menu-btn">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="test-container">
+        <h1 class="test-title">📱 Mobile Scroll Features Test</h1>
+        <p class="test-description">
+            Try swiping/scrolling horizontally on the cards below. Features include:
+            <br>• Smooth momentum scrolling
+            <br>• Snap-to-card behavior
+            <br>• Visual scroll hints (arrow on right)
+            <br>• Grab cursor on desktop
+            <br>• Touch-optimized for mobile
+        </p>
+
+        <!-- Test Section 1 -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Horizontal Scroll Test</h2>
+            </div>
+            <div class="row-scroller">
+                <div class="demo-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">1</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">2</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">3</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">4</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">5</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">6</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">7</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">8</div>
+            </div>
+        </section>
+
+        <!-- Test Section 2 -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Another Scroll Row</h2>
+            </div>
+            <div class="row-scroller">
+                <div class="demo-card" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">A</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);">B</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">C</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">D</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">E</div>
+                <div class="demo-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">F</div>
+            </div>
+        </section>
+
+        <!-- Instructions -->
+        <div
+            style="margin-top: 3rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 12px; border-left: 4px solid var(--primary-color);">
+            <h3 style="margin-bottom: 1rem;">✨ Features Implemented:</h3>
+            <ul style="color: var(--text-secondary); line-height: 2;">
+                <li>✅ <strong>Momentum Scrolling</strong> - Flick to scroll with physics</li>
+                <li>✅ <strong>Snap Points</strong> - Cards snap into place</li>
+                <li>✅ <strong>Visual Hints</strong> - Animated arrow shows scrollability</li>
+                <li>✅ <strong>Smooth Behavior</strong> - Buttery smooth on mobile</li>
+                <li>✅ <strong>Touch Optimized</strong> - Native feel on touchscreens</li>
+                <li>✅ <strong>Grab Cursor</strong> - Desktop users see grab/grabbing cursor</li>
+                <li>✅ <strong>Auto-hide Hints</strong> - Arrow disappears after first scroll</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center; padding-bottom: 2rem;">
+            <a href="index.html" class="btn btn-primary">
+                <i class="fas fa-home"></i> Back to Main Site
+            </a>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
